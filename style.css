@@ -1,0 +1,542 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER ET NAVIGATION */
+.box {
+ width: 100%;
+ height: 100px;
+    background-color: black;
+ color: white;
+  display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 4vw;
+}
+
+.box h2 {
+  margin-left: 2vw;
+   margin-top: 1vh;
+  font-size: 1.2rem;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+/* Couleur aqua pour texte important */
+.item-highlight {
+    color: aqua;
+}
+
+
+/* SECTION ARTICLE PRINCIPAL */
+.article {
+ width: 100%;
+  max-width: 1200px;
+  height: 250px;    /* pour ajuster la hauteur de la section */
+  margin: 5vh 0;
+   padding-left: 70px;
+ text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.6;
+ color: rgb(0, 0, 0);
+}
+
+/* Bouton "Voir mes projets" */
+.btn-projets {
+  display: inline-block;      
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+ padding: 0.5rem 1rem;       
+   margin-top: 2vh;
+  margin-left: 0;             
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease;
+ cursor: pointer;
+    font-size: 0.9rem;
+   width: auto;                /* largeur auto, s’adapte au contenu */
+  text-align: center;
+  white-space: nowrap;        /* empêche le texte de se couper */
+}
+
+.btn-projets:hover {
+    background-color: #00ffffcc;
+    transform: scale(1.05);
+}
+
+
+#accueil {
+    display: flex;
+  align-items: center; /* aligne verticalement le texte et l'image */
+    gap: 20px; /* espace entre texte et image */
+}
+
+
+.illustration{
+    width: 200px;
+   height: 210px;
+    overflow: hidden;
+}
+
+.illustration img{
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+    object-position: top center; 
+}
+
+
+/* SECTION À PROPOS*/
+
+/* Dossier parent */
+.entete-apropos {
+    width: 100%;
+   min-height: 250px;
+    background-color: rgba(232, 233, 233, 0.345);
+    color: rgb(0, 0, 0);
+   padding: 30px 20px 2rem 20px;
+   box-sizing: border-box;
+   border-bottom: 1px solid black;
+  border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.entete-apropos h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+/* Conteneur principal avec texte et photo */
+.contenu-apropos {
+    display: flex;
+    align-items: flex-start;
+  justify-content: flex-start;
+ gap: 5px; /* un peu plus d'air entre texte et image */
+    max-width: 1200px;
+    margin: 0 auto;
+   padding: 0 80px; /* espace horizontal intérieur */
+}
+
+
+/* Colonne gauche : textes */
+.textes-apropos {
+    flex: 1.2; /*  donne plus d'espace au texte */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.texte{
+    display: flex;
+   flex-direction: column;
+    gap: 15px;
+  line-height: 1.2;
+    margin-left: 0;
+}
+
+/* Colonne droite photo */
+.photo-profil {
+    width: 210px;
+    height: 210px;
+    min-width: 210px;
+   border-radius: 50%;
+   overflow: hidden;
+  border: 2px solid #00ffff;
+    margin: 0;
+    flex-shrink: 0; /* ne permet pas la photo de rétrécir */
+}
+
+.photo-profil img {
+  width: 100%;
+   height: 100%;
+    object-fit: cover;
+    object-position: top center; 
+}
+
+/* Bouton CV */
+.btn-cv {
+    display: inline-block;
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+   margin-top: 0;
+   margin-left: 0;
+  text-decoration: none;
+  border-radius: 0.4rem;
+   transition: all 0.3s ease;
+  cursor: pointer;
+   font-size: 0.9rem;
+    width: fit-content;
+}
+
+.btn-cv:hover {
+ background-color: #00ffffcc;
+ transform: scale(1.05);
+}
+
+
+/*SECTION PROJETS*/
+#section_projet {
+ width: 100%;
+ min-height: 50px;
+ text-align: center;
+ margin-top: 50px;
+ background-color: rgb(255, 255, 255);
+ color: rgb(0, 0, 0);
+}
+
+.titre-projet {
+   width: fit-content;
+    margin: 0 auto 15px auto; /* top 0, left/right auto, bottom 15px */
+    line-height: 2.5;
+}
+
+#bn {
+     width: fit-content;
+    margin: 0 auto 15px auto; /* top 0, left/right auto, bottom 15px */
+    line-height: 1.2;
+}
+
+/* Conteneur des cartes de projets */
+.conteneur-projets {
+    display: flex;
+    flex-wrap: wrap;
+   gap: 20px;
+   padding: 20px;
+    justify-content: center; /* centre horizontalement les cartes */
+    margin-top: 20px;
+}
+
+
+/* Style de chaque carte projet */
+.carte-projet {
+    width: 200px;
+    min-height: 60px;
+    background-color: rgba(164, 162, 162, 0.345);
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+   display: flex;
+   align-items: center;
+justify-content: center;
+    text-align: center;
+}
+
+.carte-projet p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+/* Effet au survol des cartes projets */
+.carte-projet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 255, 255, 0.2);
+  border-color: rgb(0, 255, 255); 
+  transition: all 0.3s ease;
+}
+
+/* SECTION COMPETENCES*/
+#competences {
+   width: 100%;
+  min-height: 50px;
+    margin-top: 40px;
+   padding: 25px 20px;
+    background-color: rgba(232, 233, 233, 0.345);
+   border-radius: 8px;
+}
+
+.titre-competences {
+    margin-top: 40px;
+    text-align: center;  
+    margin-bottom: 25px;
+}
+
+/* Conteneur des cartes */
+.conteneur-competences {
+    display: flex;
+    justify-content: center;
+ flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+    padding: 15px;
+}
+
+/* Cartes de compétences */
+.carte-competence {
+ background-color: white;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  min-height: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte-competence:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.carte-competence h4 {
+   color: #00ffff;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+   border-bottom: 2px solid #00ffff;
+  padding-bottom: 8px;
+}
+
+.carte-competence ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carte-competence li {
+    padding: 6px 0;
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.4;
+}
+
+
+
+/* SECTION CONTACT*/
+#contact {
+  width: 100%;
+ background-color: #000;
+   color: white;
+   padding: 20px 0;
+    text-align: center;
+}
+
+.texte_de_pied p {
+  font-size: 18px;
+   line-height: 1.3;
+    margin: 0 0 10px 0;
+}
+
+.textegras {
+    font-weight: bold;
+}
+
+/* Cadre du formulaire */
+.cadre-contact {
+    background-color: #111;
+    width: 380px;
+   margin: 15px auto;
+   padding: 20px;
+    border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 255, 255, 0.2);
+   font-size: 14px;
+}
+
+/* Formulaire */
+.formulaire-contact {
+    display: flex;
+   flex-direction: column;
+    gap: 10px;
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: white;
+}
+
+input, 
+textarea {
+    background-color: white;
+    border: 1px solid aqua;
+   border-radius: 5px;
+  padding: 6px;
+    font-size: 13px;
+    color: black;
+}
+
+textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+/* Bouton Envoyer */
+.btn-envoyer {
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+   font-size: 13px;
+   cursor: pointer;
+   align-self: center;
+    width: 50%;
+    transition: 0.2s ease;
+}
+
+.btn-envoyer:hover {
+    background-color: #00cccc;
+    transform: scale(1.05);
+}
+
+
+/* PIED DE PAGE- COPYRIGHT */
+.copyrigth {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 0 10px;
+   margin: 20px 0;
+   font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+ /* responsive */
+/* Responsive */
+@media (max-width: 768px) {
+    /* Header */
+    .box {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Section accueil */
+    #accueil {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .article {
+        font-size: 1.2rem;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .illustration {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* À propos */
+    .contenu-apropos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .photo-profil {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .textes-apropos {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    /* Projets */
+    .conteneur-projets {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .carte-projet {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Compétences */
+    .conteneur-competences {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .carte-competence {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Contact */
+    .cadre-contact {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .formulaire-contact .champ input,
+    .formulaire-contact .champ textarea {
+        width: 100%;
+    }
+    
+    .btn-envoyer {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Mobile très petits écrans */
+@media (max-width: 480px) {
+    .article {
+        font-size: 1rem;
+    }
+    
+    .illustration,
+    .photo-profil {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .cadre-contact {
+        width: 95%;
+    }
+}

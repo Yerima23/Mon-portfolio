@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Yérima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <section class="box">
+            <h2>OROU GOURA <span class="item-highlight">YERIMA CONSTANT</span></h2>
+            <nav>
+                <ul>
+                    <li><a href="#accueil"><span class="item-highlight">Accueil</span></a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#section_projet">Projets</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- SECTION ACCUEIL -->
+        <div id="accueil" class="article">
+            <div>
+                <p>
+                    Je suis <span class="item-highlight">[Yérima]</span>, Développeur en devenir <br>
+                    passionné par le digital, le web et le design !
+                </p>
+                <a href="#section_projet" class="btn-projets">Voir mes projets</a>
+            </div>
+            <div class="illustration">
+                <img src="medias/download.jpg" alt="digital">
+            </div>
+        </div>
+
+        <!-- SECTION À PROPOS -->
+        <section id="apropos" class="entete-apropos">
+         <h4 class="item-highlight">À propos</h4>
+            <div class="contenu-apropos">
+                <div class="textes-apropos">
+                 <div class="texte">
+                    <p>
+                            Je m'appelle <span class="item-highlight">Yérima Constant OROU GOURA</span>, 
+                            agent de mise en oeuvre de projet, <br> spécialiste en médiation et facilitation 
+                            sociale avec plus de cinq ans d'expériences <br> dans la gestion des projets
+                            de développement et humanitaires.
+                     </p>
+                        <p>
+                            Passionné par le digital et la création de sites web modernes et interactifs.
+                            Je suis actuellement étudiant en <span class="item-highlight">développement web</span>, 
+                            et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.
+                        </p>
+                        <p>
+                            J'adore transformer mes idées en projets concrets et expérimenter avec les 
+                            nouvelles technologies.
+                        </p>
+                    </div>
+                    <a href="medias/cv.pdf" class="btn-cv">Télécharger mon CV</a>
+                </div>
+                <div class="photo-profil">
+                    <img src="medias/img12.jpg" alt="photo de profil">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION PROJETS -->
+        <section id="section_projet">
+         <h3><span class="item-highlight">Mes Projets</span></h3>
+            <p id="bn">Ici, je vous présente mon parcours professionnel au cours de ces cinq dernières années</p>
+            <div class="conteneur-projets">
+              <div class="carte-projet"><p>Recensement National de l'Agriculture (2018)</p></div>
+                <div class="carte-projet"><p>Etude d'évaluation finale du Projet LRP (2019)</p></div>
+                <div class="carte-projet"><p>Mc Govern Dole Food For Education and Child Nutrition II (2019 - 2021)</p></div>
+                <div class="carte-projet"><p>Chimio-prévention du paludisme saisonnier (2022)</p></div>
+                <div class="carte-projet"><p>Mc Govern Dole Food For Education and Child Nutrition III (2022 -2025)</p></div>
+            </div>
+        </section>
+
+        <!-- SECTION COMPÉTENCES -->
+        <section id="competences">
+            <h3 class="titre-competences">Mes compétences</h3>
+            <div class="conteneur-competences">
+             <div class="carte-competence">
+                  <h4>Soft Skills</h4>
+                    <ul>
+                      <li>Gestion de projet</li>
+                      <li>Pédagogie</li>
+                     <li>Autonomie</li>
+                     <li>Travail d'équipe</li>
+                    </ul>
+                </div>
+             <div class="carte-competence">
+               <h4>Compétences Techniques</h4>
+                  <ul>
+                      <li>HTML / CSS</li>
+                     <li>JavaScript (en apprentissage)</li>
+                     <li>Commcare et Kobo</li>
+                     <li>Power BI</li>
+                      <li>SIG et Cartographie</li>
+                    </ul>
+                </div>
+                <div class="carte-competence">
+                    <h4>Outils</h4>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>VS Code</li>
+                        <li>Suite Office</li>
+                        <li>SPSS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <section id="contact">
+         <div class="texte_de_pied">
+             <p>
+                 <span class="textegras">Vous avez un</span> 
+                 <span class="item-highlight">projet en tête?</span> <br>
+                    N'hésitez pas à me <span class="item-highlight">contacter</span>
+                </p>
+            </div>
+            <div class="cadre-contact">
+              <form class="formulaire-contact">
+                 <div class="champ">
+                     <label for="prenom">Prénom</label>
+                      <input type="text" id="prenom" placeholder="Votre prénom">
+                    </div>
+                    <div class="champ">
+                      <label for="nom">Nom</label>
+                      <input type="text" id="nom" placeholder="Votre nom">
+                    </div>
+                    <div class="champ">
+                        <label for="sujet">Sujet</label>
+                        <input type="text" id="sujet" placeholder="Sujet du message">
+                    </div>
+                    <div class="champ">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Votre message"></textarea>
+                    </div>
+                    <button type="submit" class="btn-envoyer">Envoyer</button>
+                </form>
+            </div>
+        </section>
+        <div class="copyrigth">
+            <div><p>Designed by <span class="item-highlight">[Yérima]</span> with HTML CSS JS</p></div>
+            <div><p>Tous droits réservés - 2025</p></div>
+        </div>
+    </footer>
+
+    <!-- JS Validation Formulaire -->
+    <script>
+        const form = document.querySelector('.formulaire-contact');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const prenom = document.getElementById('prenom').value.trim();
+            const nom = document.getElementById('nom').value.trim();
+            const sujet = document.getElementById('sujet').value.trim();
+            const message = document.getElementById('message').value.trim();
+            if(!prenom || !nom || !sujet || !message){
+                alert("Veuillez remplir tous les champs avant d'envoyer.");
+                return;
+            }
+            alert(`Merci ${prenom} ${nom} !\nVotre message a bien été envoyé.`);
+            form.reset();
+        });
+    </script>
+</body>
+</html>
